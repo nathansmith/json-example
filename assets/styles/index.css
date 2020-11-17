@@ -1,0 +1,185 @@
+/*
+==============
+Global styles.
+==============
+*/
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: 1.5;
+
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	color: #333;
+	background-color: #fff;
+	font-family: sans-serif;
+	word-break: break-word;
+}
+
+body {
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+
+	max-width: 900px;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+figure {
+	margin-bottom: 20px;
+}
+
+/*
+=========
+Headings.
+=========
+*/
+
+h1 {
+	font-size: 2rem;
+}
+
+/*
+======
+Links.
+======
+*/
+
+a {
+	color: blue;
+}
+
+/*
+=====
+Code.
+=====
+*/
+
+code {
+	color: red;
+	font-family: monospace;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+/*
+================
+Horizontal rule.
+================
+*/
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 2px;
+}
+
+/*
+=======
+Tables.
+=======
+*/
+
+table {
+	font-family: monospace;
+	font-size: 1.2rem;
+}
+
+th {
+	color: red;
+	font-weight: inherit;
+	text-align: right;
+	white-space: nowrap;
+}
+
+td,
+th {
+	padding: 5px;
+	vertical-align: top;
+}
+
+/*
+=====================
+Tables: string value.
+=====================
+*/
+
+.is-style-string {
+	color: green;
+}
+
+.is-style-string:after,
+.is-style-string:before {
+	color: #ccc;
+	pointer-events: none;
+	user-select: none;
+}
+
+.is-style-string:after {
+	content: '"';
+}
+
+.is-style-string:before {
+	content: '"';
+}
+
+/*
+====================
+Tables: other value.
+====================
+*/
+
+.is-style-other {
+	color: blueviolet;
+}
+
+/*
+====================
+Tables: media query.
+====================
+*/
+
+@media (max-width: 900px) {
+	td,
+	th,
+	tbody,
+	thead,
+	tfoot,
+	table {
+		display: block;
+	}
+
+	th,
+	td {
+		padding: 0;
+	}
+
+	th {
+		text-align: left;
+	}
+
+	tr + tr th {
+		padding-top: 25px;
+	}
+}
