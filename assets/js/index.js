@@ -15,7 +15,7 @@
 
 	try {
 		// Fetch response.
-		const response = await window.fetch(url);
+		const response = await fetch(url);
 
 		// Convert string to JSON.
 		const json = await response.json();
