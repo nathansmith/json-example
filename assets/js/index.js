@@ -20,9 +20,6 @@
 		// Convert string to JSON.
 		const json = await response.json();
 
-		// TODO: REMOVE THIS.
-		console.log(json);
-
 		// Array of keys.
 		const keyArray = Object.keys(json);
 
